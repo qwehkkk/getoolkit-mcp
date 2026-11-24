@@ -1,0 +1,36 @@
+{
+  "name": "getoolkit-mcp",
+  "version": "0.1.0",
+  "description": "Deterministic developer utilities (hash, Unix timestamp, UUID v4, Base64, URL encoding) as MCP tools. Local, no network, no API keys. Companion to getoolkit.com.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "getoolkit-mcp": "src/index.js" },
+  "engines": { "node": ">=18" },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwehkkk/getoolkit-mcp.git"
+  },
+  "homepage": "https://getoolkit.com",
+  "bugs": { "url": "https://github.com/qwehkkk/getoolkit-mcp/issues" },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "developer-tools",
+    "hash",
+    "sha256",
+    "unix-timestamp",
+    "uuid",
+    "base64",
+    "url-encode"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/smoke.mjs"
+  }
+}

@@ -1,0 +1,4 @@
+# Smithery deployment config (https://smithery.ai)
+start: node src/index.js
+build:
+  install: npm install
